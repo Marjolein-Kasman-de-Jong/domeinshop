@@ -24,20 +24,36 @@ Table of Contents:
     padding: 0;
 }
 
+button {
+    padding: 20px 30px;
+    border: 1px solid #1C2B32;
+    background-color: #1C2B32;
+    font-size: 16px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
     color: #1C2B32;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+}
+
+h1 {
     font-size: 100px;
-    font-weight: 800;
+}
+
+h2 {
+    font-size: 36px;
 }
 
 .subheading {
@@ -54,13 +70,22 @@ button {
     color: white;
 }
 
+a {
+    cursor: pointer;
+    color: #899CA0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
 /*///////////// 3.1 Header /////////////*/
 
-header {
+.main-header {
     height: 800px;
     display: flex;
     justify-content: center;
@@ -90,25 +115,36 @@ input {
     background-color: transparent;
 }
 
-button {
+.main-header button {
     margin-left: -4px;
-    padding: 20px 30px;
-    border: 1px solid #1C2B32;
     border-radius: 0 30px 30px 0;
-    background-color: #1C2B32;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 /*///////////// 3.2 Testimonial /////////////*/
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
+h2 {
+    margin: 60px 0;
+}
 
 /*///////////// 3.3 Support /////////////*/
 
+.support-section img {
+    width: 100%;
+    border-radius: 20px;
+}
 
+.support-section p {
+    margin: 28px 0;
+}
+
+.support-section button {
+    border-radius: 30px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
 
