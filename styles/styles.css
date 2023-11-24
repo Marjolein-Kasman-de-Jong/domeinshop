@@ -35,6 +35,15 @@ button:hover {
     cursor: pointer;
 }
 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 60px 0;
+}
+
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -92,6 +101,7 @@ a:hover {
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
     background-position: 0 -250px;
+    background-repeat: no-repeat;
 }
 
 .header-wrapper {
@@ -122,13 +132,35 @@ input {
 
 /*///////////// 3.2 Testimonial /////////////*/
 
-main {
-    max-width: 1000px;
-    margin: 0 auto;
+.testimonial-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
-h2 {
-    margin: 60px 0;
+blockquote {
+    padding: 50px 60px 50px 150px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px #899CA0;
+    position: relative;
+}
+
+address {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+address img {
+    width: 44px;
+    border-radius: 50%;
+}
+
+.quotation-mark {
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
 
 /*///////////// 3.3 Support /////////////*/
@@ -168,3 +200,13 @@ details p {
 }
 
 /*///////////// 3.5 Footer /////////////*/
+
+body > footer {
+    padding: 28px;
+    background-color: #1C2B32;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
