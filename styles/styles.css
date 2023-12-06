@@ -100,7 +100,7 @@ a:hover {
     justify-content: center;
     background-image: url("../assets/images/mountains.jpg");
     background-size: cover;
-    background-position: 0 -250px;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -187,7 +187,7 @@ address img {
     gap: 32px;
 }
 
-details:hover {
+summary:hover {
     cursor: pointer;
 }
 
